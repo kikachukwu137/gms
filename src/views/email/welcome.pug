@@ -1,0 +1,24 @@
+extends baseEmail
+
+block content
+  p Hi #{firstName},
+
+  p Welcome to <strong>GMS Travels</strong> — we're thrilled to have you on board! 🎉✈️
+
+  p At GMS, we’re more than just a travel service — we’re a community of explorers. Make sure to upload your profile photo so we can get to know you better!
+
+  table.btn.btn-primary(role='presentation', border='0', cellpadding='0', cellspacing='0', style='margin-top: 20px;')
+    tbody
+      tr
+        td(align='center')
+          table(role='presentation', border='0', cellpadding='0', cellspacing='0')
+            tbody
+              tr
+                td(style='background-color:#28a745; border-radius:5px; padding:10px 20px;')
+                  a(href=`${url}`, target='_blank', style='color:#ffffff; text-decoration:none; display:inline-block; font-weight:bold;') Upload Profile Photo
+
+  p If you need help planning your next adventure, our travel guides and support team are just a click away.
+
+  p Safe travels and welcome aboard!
+
+  p - The GMS Travels Team 🌍
